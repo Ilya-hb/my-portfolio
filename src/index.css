@@ -22,3 +22,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Add these styles to your CSS file or your Tailwind CSS configuration */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: translateX(-10px); /* Adjust the distance as needed */
+}

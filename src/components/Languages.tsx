@@ -20,15 +20,7 @@ export default function Languages() {
           <US title="United States" />
           US
         </li>
-        <li
-          className={`cursor-pointer ${
-            language === "RU" ? "underline" : ""
-          } hover:underline dark:text-white text-black`}
-          onClick={() => handleLanguageClick("RU")}
-        >
-          <RU title="Russia" />
-          RU
-        </li>
+
         <li
           className={`cursor-pointer ${
             language === "UA" ? "underline" : ""

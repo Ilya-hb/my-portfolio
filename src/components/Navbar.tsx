@@ -12,8 +12,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="dark:bg-neutral-800 bg-stone-300 p-4">
-      <div className="container-fluid px-16 max-lg:px-0 mx-auto flex justify-between items-center w-full">
+    <nav className="dark:bg-secondaryDark bg-secondaryLight p-4">
+      <div className="container px-16 max-lg:px-0 mx-auto flex justify-between items-center w-full">
         <a
           href="#home"
           className="text-2xl font-bold dark:text-white text-black transition hover:text-gray-500"
@@ -22,7 +22,7 @@ function Navbar() {
         </a>
 
         <div className="lg:hidden flex space-x-5">
-          <Switcher />  
+          <Switcher />
           <button
             onClick={toggleMenu}
             className={`text-white hover:text-gray-400 transition transform ${
@@ -30,19 +30,19 @@ function Navbar() {
             }`}
           >
             {isOpen ? (
-              <FaTimes className="text-2xl" />
+              <FaTimes className="text-2xl dark:text-primaryLight text-primaryDark" />
             ) : (
-              <FaBars className="text-2xl" />
+              <FaBars className="text-2xl dark:text-primaryLight text-primaryDark" />
             )}
           </button>
         </div>
         <ul
           className={`${
-            isOpen ? "translate-y" : "hidden"
+            isOpen ? "" : "hidden"
           } lg:flex lg:space-x-4 space-y-4 lg:space-y-0
            absolute top-16 left-0 w-full lg:w-auto
-           dark:bg-neutral-800 bg-stone-300 px-8 py-4 lg:p-0 lg:relative 
-           lg:top-auto lg:left-auto transition-transform`}
+           dark:bg-secondaryDark bg-secondaryLight px-8 py-4 lg:p-0 lg:relative 
+           lg:top-auto lg:left-auto`}
         >
           <li>
             <a
