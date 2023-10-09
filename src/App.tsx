@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     document.title = "Greetings!";
   }, []);
-  
+
   return (
     <div
       className="h-screen dark:bg-gradient-to-b dark:from-secondaryDark dark:to-black 

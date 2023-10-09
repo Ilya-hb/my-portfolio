@@ -1,12 +1,12 @@
-// Navbar.tsx
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Switcher from "../switcher";
 import Languages from "./Languages";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useTranslation();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -18,7 +18,7 @@ function Navbar() {
           href="#home"
           className="text-2xl font-bold dark:text-white text-black transition hover:text-gray-500"
         >
-          Мой Портфолио
+          {t("navbarTitle")}
         </a>
 
         <div className="lg:hidden flex space-x-5">
@@ -49,7 +49,7 @@ function Navbar() {
               href="#home"
               className="dark:text-white text-black text-xl hover:text-gray-400 transition"
             >
-              Главная
+              {t("navbarMain")}
             </a>
           </li>
           <li>
@@ -57,7 +57,7 @@ function Navbar() {
               href="#projects"
               className="dark:text-white text-black text-xl hover:text-gray-400 transition"
             >
-              Проекты
+              {t("navbarProjects")}
             </a>
           </li>
           <li>
@@ -65,7 +65,7 @@ function Navbar() {
               href="#contact"
               className="dark:text-white text-black text-xl hover:text-gray-400 transition"
             >
-              Контакты
+              {t("navbarContacts")}
             </a>
           </li>
 
