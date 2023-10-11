@@ -1,14 +1,14 @@
-import React from "react";
 import photo from "../images/ilusha.png";
 import { useTranslation } from "react-i18next";
+import TechnologiesSlider from "./TechnologiesSlider";
 
 export default function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section className="about-me container mx-auto py-12 px-6">
+    <section className="about-me container mx-auto py-14 px-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div>
-          <h1 className="text-4xl font-bold text-black dark:text-white mb-5">
+          <h1 className="text-6xl font-bold text-black dark:text-white mb-5">
             {t("aboutMe")}
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
@@ -27,8 +27,10 @@ export default function AboutMe() {
             веб-приложения, которые улучшают пользовательский опыт.
           </p>
         </div>
-
-        <img src={photo} alt="" className="rounded-full w-64 h-64 mx-auto" />
+        <div className="">
+          <img src={photo} alt="" className="rounded-full w-44 h-44 mx-auto" />
+          <TechnologiesSlider />
+        </div>
       </div>
     </section>
   );

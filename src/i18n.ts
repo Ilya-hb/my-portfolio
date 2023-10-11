@@ -12,20 +12,12 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        navbarTitle: "My Portfolio",
-        navbarMain: "Main",
-        navbarProjects: "Pet-projects",
-        navbarContacts: "Contacts",
-        aboutMe: "ABOUT ME",
+        aboutMe: "Hello, my name is Ilya",
       },
     },
     ua: {
       translation: {
-        navbarTitle: "Моє резюме",
-        navbarMain: "Головна",
-        navbarProjects: "Пет-проекти",
-        navbarContacts: "Контакти",
-        aboutMe: "ПРО МЕНЯ",
+        aboutMe: "Привіт, мене звати Ілля",
       },
     },
   },

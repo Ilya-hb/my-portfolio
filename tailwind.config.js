@@ -14,8 +14,19 @@ module.exports = {
       colors: {
         primaryDark: "#1D1D1F",
         secondaryDark: "#27282A",
-        primaryLight: "#FAF3F0",
+        primaryLight: "#BEBEBE",
         secondaryLight: "#EDE4E0",
+      },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 16s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-200px * 5))",
+          },
+        },
       },
     },
   },
